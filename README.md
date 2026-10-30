@@ -1,6 +1,6 @@
 ![banner](assets/banner.png)
 
-# AI_Chatbot_Basic
+# AI-Chatbot-Basic
 
 A basic chatbot named Jordan, built on ChatterBot. It answers basic
 questions from the English ChatterBot corpus it is trained on at
