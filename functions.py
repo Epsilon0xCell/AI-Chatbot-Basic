@@ -50,15 +50,27 @@ def custom_train(Bot, conversation):
 # stdout is a pipe instead of a terminal that code goes into the output
 # as raw bytes, which is ugly but harmless for the scripted runs I test
 # with.
-# The bye check is an exact match on the lowercased input, with no
-# stripping. "bye" and "good bye" end the chat, but "bye " with a
-# trailing space or "bye!" do not; those go to the bot as questions.
-# I check the bye list before calling get_response, so the bye words
+# The words that end the chat. I keep the list in one place so the loop
+# below and the tests read the same rule.
+BYE_WORDS = ["bye jordan", "bye", "good bye", "goodbye"]
+
+
+def is_quit(text):
+    # I strip and lower the input before checking it. An earlier version
+    # of this check compared the lowered text without stripping, so
+    # "bye " with a trailing space went to the bot as a question instead
+    # of ending the chat, and "goodbye" as one word was not in the list
+    # at all. "bye!" still does not count; punctuation is not stripped.
+    return text.strip().lower() in BYE_WORDS
+
+
+# I check the bye words before calling get_response, so the bye words
 # themselves are never stored as something the bot should learn from.
+# An empty line is skipped and asked again instead of being sent to the
+# bot, where it came back with the same reply as a real failed question.
 def start_chatbot(Bot):
     print('\033c')
     print("Hello, I am Jordan. How can I help you")
-    bye_list = ["bye jordan", "bye", "good bye"]
 
     while (True):
         try:
@@ -71,7 +83,9 @@ def start_chatbot(Bot):
             # run and a typed run end identically.
             print("Jordan: Good bye and have a blessed day!")
             break
-        if user_input.lower() in bye_list:
+        if not user_input.strip():
+            continue
+        if is_quit(user_input):
             print("Jordan: Good bye and have a blessed day!")
             break
 

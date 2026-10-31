@@ -24,9 +24,18 @@ conversation while it runs (its storage is a local SQLite database and
   ("Who is the owner of the house?" / "Mark Nicholas"), and starts the
   chat loop.
 
-Exit the chat by typing `bye`, `bye jordan`, or `good bye`. If the
-input simply ends (piped input runs out, stdin is closed, or you press
-Ctrl-C), the bot prints the same goodbye message and exits cleanly.
+Exit the chat by typing `bye`, `bye jordan`, `good bye`, or
+`goodbye`. Case and spaces around the word do not matter. An empty
+line is asked again instead of being sent to the bot as a question.
+If the input simply ends (piped input runs out, stdin is closed, or
+you press Ctrl-C), the bot prints the same goodbye message and exits
+cleanly.
+
+`python main.py --help` prints a short usage line and exits 0, and it
+works before ChatterBot is installed. An unknown argument prints the
+usage line to stderr and exits 2. Running the chat without ChatterBot
+installed prints `ChatterBot is not installed` with the install
+command to stderr and exits 1, with no traceback.
 
 Verified behaviour: asked "Who is the owner of the house?", the bot
 answers "Mark Nicholas"; `bye` ends the session with "Jordan: Good bye
@@ -45,7 +54,8 @@ python main.py
 Each piece is required, and each missing piece fails in its own way
 (all reproduced):
 
-- Without ChatterBot installed: `ModuleNotFoundError: No module named 'chatterbot'`.
+- Without ChatterBot installed: `main.py` catches the failure and
+  prints the install hint described above, exit 1.
 - Without the spaCy English model: ChatterBot reports that the spaCy
   model for the English language is missing. The model is a download
   step, not a pip requirement, which is why it is a separate command
@@ -75,6 +85,22 @@ format.
   language to machine code". It does not: nothing in the code converts
   anything to machine code. It is a question answering chatbot, as
   described above.
+
+## Tests
+
+```bash
+python3 -m unittest
+```
+
+10 tests in `test_chatbot.py`: the bye word rule (plain, padded,
+capitalised, and near misses like `bye!`), the chat loop driven by a
+stand-in bot (a question is answered, an empty line is re-asked, a
+bye with a trailing space ends the chat, EOF ends it with the same
+goodbye), and the entry point run as a subprocess (`--help` exits 0,
+an unknown argument exits 2, and a missing ChatterBot exits 1 with
+the hint and no traceback). The live chat itself is not covered: it
+needs ChatterBot installed, and the tests run on machines without it
+by design.
 
 ## License
 
