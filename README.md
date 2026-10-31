@@ -79,3 +79,9 @@ format.
 ## License
 
 See LICENSE.
+
+## Diagrams and maps
+
+I drew the system out in [AI-Chatbot-Basic-Visuals](AI-Chatbot-Basic-Visuals/): an architecture diagram, a data-flow diagram of where the bot's training actually comes from, a flowchart of a run, and a product map, with the written product map, statistics with citations, and the roadmap in [VISUAL.md](AI-Chatbot-Basic-Visuals/VISUAL.md). Every sheet also ships as a PNG photograph of the paper page beside its SVG.
+
+![AI-Chatbot-Basic architecture](AI-Chatbot-Basic-Visuals/architecture.svg)
