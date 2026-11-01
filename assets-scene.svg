@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="A lane at midnight: ledger pages, bells on a cord, the parliament row, and a sleeping cat passing">
+<rect width="1200" height="260" fill="#100e2c"/>
+<!-- distant strip: ledger pages with faint marks appearing -->
+<g name="ledger-pages">
+  <g transform="translate(80 26)"><rect width="120" height="52" fill="#cfccc0" opacity="0.75"/><rect x="60" width="120" height="52" fill="#b9b6aa" opacity="0.75"/><g stroke="#6a675e" stroke-width="1.6"><line x1="14" y1="14" x2="46" y2="14" opacity="0"><animate attributeName="opacity" values="0;0.8;0.8;0" dur="11s" repeatCount="indefinite"/></line><line x1="74" y1="26" x2="106" y2="26" opacity="0"><animate attributeName="opacity" values="0;0.8;0.8;0" dur="11s" begin="3s" repeatCount="indefinite"/></line></g></g>
+  <g transform="translate(920 20)"><rect width="110" height="48" fill="#cfccc0" opacity="0.6"/><rect x="55" width="110" height="48" fill="#b9b6aa" opacity="0.6"/><g fill="#e8a43c"><circle cx="26" cy="18" r="2.4"><animate attributeName="opacity" values="1;0.15;1" dur="7s" repeatCount="indefinite"/></circle><circle cx="88" cy="30" r="2.4"><animate attributeName="opacity" values="1;0.15;1" dur="9s" begin="2s" repeatCount="indefinite"/></circle></g></g>
+</g>
+<!-- parliament row, top centre, blinking in unison at a long interval -->
+<g name="parliament-row" fill="#0a0918">
+  <g transform="translate(430 6)"><ellipse cx="0" cy="52" rx="30" ry="34"/><ellipse cx="4" cy="16" rx="22" ry="20"/><polygon points="-16,4 -13,-12 -3,1"/><polygon points="8,0 18,-13 22,5"/><circle name="eye" cx="12" cy="14" r="2.6" fill="#e8a43c"><animate attributeName="opacity" values="1;1;0;1;1" keyTimes="0;0.86;0.9;0.94;1" dur="19s" repeatCount="indefinite"/></circle></g>
+  <g transform="translate(520 0)"><ellipse cx="0" cy="56" rx="32" ry="38"/><ellipse cx="4" cy="17" rx="23" ry="21"/><polygon points="-16,5 -13,-12 -3,2"/><polygon points="8,1 19,-13 23,6"/><circle name="eye" cx="13" cy="15" r="2.6" fill="#e8a43c"><animate attributeName="opacity" values="1;1;0;1;1" keyTimes="0;0.86;0.9;0.94;1" dur="19s" repeatCount="indefinite"/></circle></g>
+  <g transform="translate(618 6)"><ellipse cx="0" cy="52" rx="30" ry="34"/><ellipse cx="-4" cy="16" rx="22" ry="20"/><polygon points="-22,5 -19,-13 -9,1"/><polygon points="3,0 13,-12 16,4"/><circle name="eye" cx="-11" cy="14" r="2.6" fill="#e8a43c"><animate attributeName="opacity" values="1;1;0;1;1" keyTimes="0;0.86;0.9;0.94;1" dur="19s" repeatCount="indefinite"/></circle></g>
+  <g transform="translate(716 2)"><ellipse cx="0" cy="54" rx="31" ry="36"/><ellipse cx="-4" cy="17" rx="22" ry="20"/><polygon points="-22,5 -19,-13 -9,2"/><polygon points="3,1 13,-12 16,5"/><circle name="eye" cx="-11" cy="15" r="2.6" fill="#e8a43c"><animate attributeName="opacity" values="1;1;0;1;1" keyTimes="0;0.86;0.9;0.94;1" dur="19s" repeatCount="indefinite"/></circle></g>
+</g>
+<!-- middle strip: cord of bells bobbing over the fence line -->
+<path name="bell-cord" d="M0 128 Q 300 152 600 138 T 1200 130" fill="none" stroke="#96824e" stroke-width="2.4"/>
+<g name="bells" fill="#a8842f">
+  <g transform="translate(220 138)"><animateTransform attributeName="transform" type="translate" values="220 138;220 144;220 138" dur="4.4s" repeatCount="indefinite" additive="replace"/><ellipse rx="10" ry="13"/><rect x="-5" y="6" width="10" height="2.6" fill="#17143a"/></g>
+  <g transform="translate(470 146)"><animateTransform attributeName="transform" type="translate" values="470 146;470 151;470 146" dur="5.2s" begin="1s" repeatCount="indefinite"/><ellipse rx="8" ry="11"/><rect x="-4" y="5" width="8" height="2.2" fill="#17143a"/></g>
+  <g transform="translate(760 140)"><animateTransform attributeName="transform" type="translate" values="760 140;760 146;760 140" dur="4.8s" begin="0.6s" repeatCount="indefinite"/><ellipse rx="12" ry="15"/><rect x="-6" y="7" width="12" height="2.8" fill="#17143a"/></g>
+  <g transform="translate(1010 134)"><animateTransform attributeName="transform" type="translate" values="1010 134;1010 139;1010 134" dur="5.6s" begin="1.8s" repeatCount="indefinite"/><ellipse rx="8" ry="11"/><rect x="-4" y="5" width="8" height="2.2" fill="#17143a"/></g>
+</g>
+<line name="fence-line" x1="0" y1="196" x2="1200" y2="196" stroke="#221d4e" stroke-width="16"/>
+<line x1="0" y1="188" x2="1200" y2="188" stroke="#c4d0e0" stroke-width="2"/>
+<!-- close strip: a sleeping cat drifts across at ground level, pausing to blink -->
+<g name="passing-cat">
+  <animateTransform attributeName="transform" type="translate" values="-160 0;560 0;560 0;1360 0" keyTimes="0;0.42;0.58;1" dur="46s" repeatCount="indefinite"/>
+  <g transform="translate(0 218)" fill="#0a0918">
+    <ellipse cx="0" cy="16" rx="52" ry="20"/><ellipse cx="40" cy="2" rx="21" ry="18"/>
+    <polygon points="28,-10 32,-24 42,-12"/><polygon points="46,-12 56,-22 58,-8"/>
+    <path d="M-50 22 Q -78 10 -66 -8" fill="none" stroke="#0a0918" stroke-width="8"/>
+    <circle name="slow-blink" cx="47" cy="0" r="2.6" fill="#e8a43c"><animate attributeName="opacity" values="1;1;0;1" keyTimes="0;0.47;0.5;0.53" dur="46s" repeatCount="indefinite"/></circle>
+  </g>
+</g>
+</svg>

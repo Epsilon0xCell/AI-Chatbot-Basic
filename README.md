@@ -1,12 +1,22 @@
-![banner](assets/banner.png)
+![AI-Chatbot-Basic introduction, wordless](intro-banner.png)
+
 
 # AI-Chatbot-Basic
+
+![AI-Chatbot-Basic banner](banner.png)
+
+![AI-Chatbot-Basic animated scene](assets-scene.svg)
+
 
 A basic chatbot named Jordan, built on ChatterBot. It answers basic
 questions from the English ChatterBot corpus it is trained on at
 startup, plus one custom trained answer, and it learns from the
 conversation while it runs (its storage is a local SQLite database and
 `read_only` is off).
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>ENTERED AT 23:00 · LOG ENTRY · lantern lit</sub></p>
 
 ## What the code does
 
@@ -41,6 +51,10 @@ Verified behaviour: asked "Who is the owner of the house?", the bot
 answers "Mark Nicholas"; `bye` ends the session with "Jordan: Good bye
 and have a blessed day!".
 
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>ENTERED AT 24:00 · LOG ENTRY</sub></p>
+
 ## Setup
 
 Python 3, then:
@@ -64,7 +78,13 @@ Each piece is required, and each missing piece fails in its own way
 - Without the chatterbot-corpus package: there is no
   `chatterbot.corpus.english` data to train on.
 
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>ENTERED AT 25:00 · LOG ENTRY</sub></p>
+
 ## The training-data folder
+
+<blockquote class="callout"><strong>ENTERED AT MIDNIGHT</strong>: No code in this repo reads that folder. The bot trains on the installed package's corpus, so editing the local copies does not change what the bot learns.</blockquote>
 
 `training-data/` holds YAML corpus files, and `training-data.md` in
 that folder says "All of our training data is in this folder." That is
@@ -76,6 +96,10 @@ corpus, so editing the local copies does not change what the bot
 learns. The folder is kept as a local reference copy of the corpus
 format.
 
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>ENTERED AT 26:00 · LOG ENTRY</sub></p>
+
 ## Notes
 
 - The bot creates its SQLite database (`db.sqlite3`) in the folder you
@@ -85,6 +109,10 @@ format.
   language to machine code". It does not: nothing in the code converts
   anything to machine code. It is a question answering chatbot, as
   described above.
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>ENTERED AT 27:00 · LOG ENTRY</sub></p>
 
 ## Tests
 
@@ -102,9 +130,17 @@ the hint and no traceback). The live chat itself is not covered: it
 needs ChatterBot installed, and the tests run on machines without it
 by design.
 
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>ENTERED AT 28:00 · LOG ENTRY</sub></p>
+
 ## License
 
 See LICENSE.
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>ENTERED AT 29:00 · LOG ENTRY</sub></p>
 
 ## Diagrams and maps
 
