@@ -3,6 +3,9 @@
 
 # AI-Chatbot-Basic
 
+**Printed, and Growing**
+_A friendly clerk in teal and rust, printed on cream paper, learning from every conversation._
+
 ![AI-Chatbot-Basic banner](banner.png)
 
 ![AI-Chatbot-Basic animated scene](assets-scene.svg)
@@ -16,7 +19,7 @@ conversation while it runs (its storage is a local SQLite database and
 
 <p align="center"><img src="sep-heavy.svg" alt=""></p>
 
-<p class="plate"><sub>ENTERED AT 23:00 · LOG ENTRY · lantern lit</sub></p>
+<p class="plate"><sub>PRINT PASS 1 · TEAL AND RUST · first pull</sub></p>
 
 ## What the code does
 
@@ -53,7 +56,7 @@ and have a blessed day!".
 
 <p align="center"><img src="sep-heavy.svg" alt=""></p>
 
-<p class="plate"><sub>ENTERED AT 24:00 · LOG ENTRY</sub></p>
+<p class="plate"><sub>PRINT PASS 2 · TEAL AND RUST</sub></p>
 
 ## Setup
 
@@ -80,11 +83,11 @@ Each piece is required, and each missing piece fails in its own way
 
 <p align="center"><img src="sep-heavy.svg" alt=""></p>
 
-<p class="plate"><sub>ENTERED AT 25:00 · LOG ENTRY</sub></p>
+<p class="plate"><sub>PRINT PASS 3 · TEAL AND RUST</sub></p>
 
 ## The training-data folder
 
-<blockquote class="callout"><strong>ENTERED AT MIDNIGHT</strong>: No code in this repo reads that folder. The bot trains on the installed package's corpus, so editing the local copies does not change what the bot learns.</blockquote>
+<blockquote class="callout"><strong>FROM THE CLERK'S DESK</strong>: No code in this repo reads that folder. The bot trains on the installed package's corpus, so editing the local copies does not change what the bot learns.</blockquote>
 
 `training-data/` holds YAML corpus files, and `training-data.md` in
 that folder says "All of our training data is in this folder." That is
@@ -98,7 +101,7 @@ format.
 
 <p align="center"><img src="sep-heavy.svg" alt=""></p>
 
-<p class="plate"><sub>ENTERED AT 26:00 · LOG ENTRY</sub></p>
+<p class="plate"><sub>PRINT PASS 4 · TEAL AND RUST</sub></p>
 
 ## Notes
 
@@ -112,7 +115,7 @@ format.
 
 <p align="center"><img src="sep-heavy.svg" alt=""></p>
 
-<p class="plate"><sub>ENTERED AT 27:00 · LOG ENTRY</sub></p>
+<p class="plate"><sub>PRINT PASS 5 · TEAL AND RUST</sub></p>
 
 ## Tests
 
@@ -132,7 +135,7 @@ by design.
 
 <p align="center"><img src="sep-heavy.svg" alt=""></p>
 
-<p class="plate"><sub>ENTERED AT 28:00 · LOG ENTRY</sub></p>
+<p class="plate"><sub>PRINT PASS 6 · TEAL AND RUST</sub></p>
 
 ## License
 
@@ -140,7 +143,7 @@ See LICENSE.
 
 <p align="center"><img src="sep-heavy.svg" alt=""></p>
 
-<p class="plate"><sub>ENTERED AT 29:00 · LOG ENTRY</sub></p>
+<p class="plate"><sub>PRINT PASS 7 · TEAL AND RUST</sub></p>
 
 ## Diagrams and maps
 

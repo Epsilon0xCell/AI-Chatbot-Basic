@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Chatbot Basic: the watchman's round</title>
+<title>AI Chatbot Basic: printed, and growing</title>
 <meta name="description" content="AI Chatbot Basic is one of my projects. The README in the repo is short, so this page sticks to what the files themselves show.">
 <style>
 @font-face { font-family:'Almendra SC'; src:url('assets/fonts/AlmendraSC.ttf') format('truetype'); font-display:swap; }
 @font-face { font-family:'Archivo'; src:url('assets/fonts/Archivo.ttf') format('truetype'); font-display:swap; }
-:root { --indigo:#17143a; --indigo2:#100e2c; --panel:#221d4e; --frost:#c4d0e0; --amber:#e8a43c; --ink:#0a0918; --text:#e9e7f2; }
+:root { --indigo:#173f3a; --indigo2:#f3e9d2; --panel:#efe3c6; --frost:#1f7a6d; --amber:#b5502a; --ink:#173f3a; --text:#22302c; }
 * { box-sizing:border-box; }
 body { margin:0; background:var(--indigo2); color:var(--text); font-family:'Archivo',sans-serif; line-height:1.6; }
 code,pre,.mono { font-family:ui-monospace,Consolas,monospace; }
@@ -20,35 +20,35 @@ a::before { content:"\2750  "; color:var(--frost); font-size:.8em; }
 a:hover { color:var(--white); }
 a:hover::before { color:var(--amber); }
 .round { display:flex; gap:2.4rem; max-width:1220px; margin:0 auto; padding:0 4vw 3rem; }
-aside.ledger { width:205px; flex:none; position:sticky; top:0; height:100vh; padding:1.6rem .8rem 1.6rem 0; border-right:1px solid rgba(196,208,224,.35); }
-aside.ledger .hour { display:flex; justify-content:space-between; font-size:.74rem; color:#a9a4c4; padding:.3rem 0; border-bottom:1px dotted rgba(196,208,224,.25); }
+aside.ledger { width:205px; flex:none; position:sticky; top:0; height:100vh; padding:1.6rem .8rem 1.6rem 0; border-right:1px solid rgba(31,122,109,.35); }
+aside.ledger .hour { display:flex; justify-content:space-between; font-size:.74rem; color:#5d6d66; padding:.3rem 0; border-bottom:1px dotted rgba(31,122,109,.25); }
 aside.ledger nav a { display:block; padding:.5rem 0; }
-.moon { width:34px; height:34px; border-radius:50%; margin:1rem 0; background:radial-gradient(circle at 38% 50%, #e9e2c8 0 58%, #3a3560 60% 100%); border:1px solid rgba(196,208,224,.5); }
+.moon { width:34px; height:34px; border-radius:50%; margin:1rem 0; background:radial-gradient(circle at 38% 50%, #e9e2c8 0 58%, #1f7a6d 60% 100%); border:1px solid rgba(31,122,109,.5); }
 main.lane { flex:1; min-width:0; }
-.pool { background:radial-gradient(ellipse 90% 120% at 50% -10%, rgba(232,164,60,.13), transparent 55%), var(--panel);
+.pool { background:radial-gradient(ellipse 90% 120% at 50% -10%, rgba(181,80,42,.13), transparent 55%), var(--panel);
   padding:1.4rem 1.6rem; margin:2.6rem 0; position:relative;
-  border-top:5px solid rgba(196,208,224,.28);
-  background-image:radial-gradient(ellipse 90% 120% at 50% -10%, rgba(232,164,60,.13), transparent 55%), repeating-linear-gradient(90deg, transparent 0 46px, rgba(196,208,224,.07) 46px 47px); }
-.hero img.banner { width:100%; height:auto; border:1px solid rgba(196,208,224,.3); }
-.logo { width:92px; height:92px; border:1px solid rgba(196,208,224,.3); vertical-align:middle; }
+  border-top:5px solid rgba(31,122,109,.28);
+  background-image:radial-gradient(ellipse 90% 120% at 50% -10%, rgba(181,80,42,.13), transparent 55%), repeating-linear-gradient(90deg, transparent 0 46px, rgba(31,122,109,.07) 46px 47px); }
+.hero img.banner { width:100%; height:auto; border:1px solid rgba(31,122,109,.3); }
+.logo { width:92px; height:92px; border:1px solid rgba(31,122,109,.3); vertical-align:middle; }
 .lede { font-size:1.14rem; max-width:62ch; }
 .grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); }
-.crate { background:rgba(10,9,24,.35); border:1px solid rgba(196,208,224,.25); border-top:5px solid rgba(196,208,224,.4); padding:1rem 1.2rem;
-  background-image:repeating-linear-gradient(90deg, transparent 0 34px, rgba(196,208,224,.06) 34px 35px); }
-.btn { display:inline-block; color:#f0d9a0; background:#12102a; padding:.55rem 1.25rem .8rem; margin:.2rem .3rem .2rem 0; text-decoration:none;
-  box-shadow:inset 0 0 0 1px #12102a, inset 0 0 0 3px rgba(190,150,60,.75); position:relative; transition:filter .25s; }
+.crate { background:rgba(23,63,58,.35); border:1px solid rgba(31,122,109,.25); border-top:5px solid rgba(31,122,109,.4); padding:1rem 1.2rem;
+  background-image:repeating-linear-gradient(90deg, transparent 0 34px, rgba(31,122,109,.06) 34px 35px); }
+.btn { display:inline-block; color:#f3e9d2; background:#173f3a; padding:.55rem 1.25rem .8rem; margin:.2rem .3rem .2rem 0; text-decoration:none;
+  box-shadow:inset 0 0 0 1px #173f3a, inset 0 0 0 3px rgba(181,80,42,.75); position:relative; transition:filter .25s; }
 .btn::before { content:""; }
 .btn::after { content:"\2022 \2022 \2022 \2022 \2022"; position:absolute; left:0; right:0; bottom:.05rem; text-align:center; color:var(--amber); font-size:.55rem; letter-spacing:.5em; }
-.btn:hover { filter:brightness(1.65); color:#ffe9b0; }
+.btn:hover { filter:brightness(1.65); color:#ffffff; }
 .btn:active { filter:brightness(.8) sepia(.6) hue-rotate(-25deg); }
 pre.code { background:var(--ink); color:#e8e6df; padding:1rem 1.2rem; overflow-x:auto; font-size:.86rem; border-left:5px solid var(--amber); }
 table { border-collapse:collapse; width:100%; }
-td,th { border-bottom:1px solid rgba(196,208,224,.25); padding:.45rem .6rem; text-align:left; }
-.cord { border-top:2px solid rgba(196,208,224,.4); border-radius:50%; height:22px; margin:1rem 0 -6px; position:relative; }
-.cord span { position:absolute; top:2px; width:11px; height:15px; border-radius:45%; background:#a8842f; }
+td,th { border-bottom:1px solid rgba(31,122,109,.25); padding:.45rem .6rem; text-align:left; }
+.cord { border-top:2px solid rgba(31,122,109,.4); border-radius:50%; height:22px; margin:1rem 0 -6px; position:relative; }
+.cord span { position:absolute; top:2px; width:11px; height:15px; border-radius:45%; background:#b5502a; }
 .shots { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
-.shots img { width:100%; height:auto; border:1px solid rgba(196,208,224,.3); background:#f4f1e8; }
-footer { max-width:1220px; margin:0 auto; padding:1.6rem 4vw 2.6rem; color:#b6b1cc; border-top:1px solid rgba(196,208,224,.3); }
+.shots img { width:100%; height:auto; border:1px solid rgba(31,122,109,.3); background:#ffffff; }
+footer { max-width:1220px; margin:0 auto; padding:1.6rem 4vw 2.6rem; color:#5d6d66; border-top:1px solid rgba(31,122,109,.3); }
 @media (max-width:760px) { .round { flex-direction:column; } aside.ledger { position:static; width:auto; height:auto; border-right:none; } }
 </style>
 </head>
@@ -70,7 +70,7 @@ footer { max-width:1220px; margin:0 auto; padding:1.6rem 4vw 2.6rem; color:#b6b1
 </aside>
 <main class="lane">
 <header class="hero">
-  <img class="banner" src="assets/banner.png" alt="Cats seated on a fence at night, the project name chalked on the fence boards">
+  <img class="banner" src="assets/banner.png" alt="A robot clerk at a counter answering speech bubbles, tall filing cabinets of index cards behind">
   <p><img class="logo" src="assets/logo.png" alt="AI Chatbot Basic logo"></p>
   <h1>AI Chatbot Basic</h1>
   <p class="mono"><a href="https://github.com/Epsilon0xCell/AI-Chatbot-Basic">github.com/Epsilon0xCell/AI-Chatbot-Basic</a></p>

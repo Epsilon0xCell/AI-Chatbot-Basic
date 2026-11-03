@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 40" width="460" height="40" role="img" aria-label="Nine moon dots waxing, light separator">
-<line x1="0" y1="20" x2="460" y2="20" stroke="#c4d0e0" stroke-width="1.4"/>
-<g fill="#c4d0e0">
-  <circle cx="70" cy="20" r="2"/><circle cx="115" cy="20" r="3.4"/><circle cx="160" cy="20" r="5"/>
-  <circle cx="205" cy="20" r="6.8"/><circle cx="250" cy="20" r="9" fill="#e8a43c"/>
-  <circle cx="295" cy="20" r="6.8"/><circle cx="335" cy="20" r="5"/><circle cx="370" cy="20" r="3.4"/><circle cx="400" cy="20" r="2"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="10" viewBox="0 0 800 10">
+<rect width="800" height="10" fill="#f3e9d2"/>
+<rect x="0" y="4" width="800" height="2" fill="#1f7a6d" opacity="0.65"/>
+<rect x="0" y="3" width="60" height="4" fill="#b5502a">
+<animate attributeName="x" values="-60;800" dur="5.5s" repeatCount="indefinite"/></rect>
 </svg>

@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="1200" height="40" role="img" aria-label="Moon dots waxing across a rule, heavy separator">
-<line x1="0" y1="20" x2="1200" y2="20" stroke="#c4d0e0" stroke-width="1.6"/>
-<g fill="#c4d0e0">
-  <circle cx="330" cy="20" r="2"/><circle cx="400" cy="20" r="3.4"/><circle cx="475" cy="20" r="5"/>
-  <circle cx="555" cy="20" r="6.8"/><circle cx="640" cy="20" r="8.6"/><circle cx="730" cy="20" r="10.4"/>
-  <circle cx="825" cy="20" r="12" fill="#e8a43c"/><circle cx="915" cy="20" r="9"/><circle cx="990" cy="20" r="6"/><circle cx="1050" cy="20" r="3.4"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="26" viewBox="0 0 800 26">
+<rect width="800" height="26" fill="#f3e9d2"/>
+<rect x="0" y="11" width="800" height="4" fill="#1f7a6d"/>
+<circle cx="0" cy="13" r="7" fill="#b5502a">
+<animate attributeName="cx" values="0;800" dur="4.5s" repeatCount="indefinite"/></circle>
+<circle cx="400" cy="13" r="4" fill="#1f7a6d"/>
 </svg>
