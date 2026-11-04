@@ -1,5 +1,6 @@
-![AI-Chatbot-Basic introduction, wordless](intro-banner.png)
+<p align="center"><img src="intro-banner.png" alt="AI-Chatbot-Basic introduction, wordless" width="800"></p>
 
+<p align="center"><img src="logo.png" alt="AI-Chatbot-Basic logo" width="180"></p>
 
 # AI-Chatbot-Basic
 
@@ -16,6 +17,16 @@ questions from the English ChatterBot corpus it is trained on at
 startup, plus one custom trained answer, and it learns from the
 conversation while it runs (its storage is a local SQLite database and
 `read_only` is off).
+
+## Contents
+
+- [What the code does](#what-the-code-does)
+- [Setup](#setup)
+- [The training-data folder](#the-training-data-folder)
+- [Notes](#notes)
+- [Tests](#tests)
+- [License](#license)
+- [Diagrams and maps](#diagrams-and-maps)
 
 <p align="center"><img src="sep-heavy.svg" alt=""></p>
 
@@ -61,6 +72,12 @@ and have a blessed day!".
 ## Setup
 
 Python 3, then:
+
+The setup runs in three steps:
+
+1. Install the Python requirements.
+2. Download the spaCy English model.
+3. Start the bot with `python main.py`.
 
 ```bash
 pip install -r requirements.txt
@@ -150,3 +167,5 @@ See LICENSE.
 I drew the system out in [AI-Chatbot-Basic-Visuals](AI-Chatbot-Basic-Visuals/): an architecture diagram, a data-flow diagram of where the bot's training actually comes from, a flowchart of a run, and a product map, with the written product map, statistics with citations, and the roadmap in [VISUAL.md](AI-Chatbot-Basic-Visuals/VISUAL.md). Every sheet also ships as a PNG photograph of the paper page beside its SVG.
 
 ![AI-Chatbot-Basic architecture](AI-Chatbot-Basic-Visuals/architecture.svg)
+
+<p align="center"><sub>Architecture diagram from AI-Chatbot-Basic-Visuals.</sub></p>
